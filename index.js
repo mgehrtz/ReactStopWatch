@@ -47,13 +47,13 @@ class Stopwatch extends React.Component {
                     {Math.floor(this.state.msPassed / 1000)} s
                 </h2>
                 <div className="d-flex justify-content-center">
-                    <button className="btn btn-outline-primary mr-2">
+                    <button className="btn btn-outline-primary mr-2" onClick={this.start}>
                         start
                     </button>
-                    <button className="btn btn-outline-danger mr-2">
+                    <button className="btn btn-outline-danger mr-2" onClick={this.stop}>
                         stop
                     </button>
-                    <button className="btn btn-outline-warning">
+                    <button className="btn btn-outline-warning" onClick={this.reset}>
                         reset
                     </button>
                 </div>
